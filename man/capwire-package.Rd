@@ -16,8 +16,8 @@ The package also includes functions to compare models, get confidence intervals 
 \tabular{ll}{
 Package: \tab capwire\cr
 Type: \tab Package\cr
-Version: \tab 1.1.2\cr
-Date: \tab 2012-06-20\cr
+Version: \tab 1.1.4\cr
+Date: \tab 2012-08-16\cr
 License: \tab License: GPL (>= 2)\cr
 }
 }

@@ -68,7 +68,7 @@ The function \code{partitionCountData} is used internally in \code{\link{fitTirm
 ## Use dummy data set with a few individuals having very high capture counts
 d <- c(1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,4,4,6,6,7,8,10,10,14,17,19,22,22,25)
 
-data <- cbind(c(1:length(d)), d)
+data <- buildClassTable(d)
 
 ## Perform Partitioning Algorithm
 

@@ -187,7 +187,7 @@ function(data, n.boots.part=100, max.pop=500){
 	boot.d.L.2.3.TIRM <- rep(NA, n.boots.part)
 	for (boot.i in 1:n.boots.part){
 		sim.data <- simTirm(na=fitT$ml.na, nb=fitT$ml.nb, alpha=fitT$alpha, s=fitT$sample.size)
-		boot.set.AB <- sim.data[,2]
+		boot.set.AB <- classToInd(sim.data)[,2]
 		boot.results <- find.3.way.partitions(boot.set.AB)
 		boot.d.L.2.3.TIRM[boot.i] <- delta.L.for.three.way.partitioning(boot.results)$d.L.2.3
 	}
